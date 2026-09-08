@@ -37,10 +37,11 @@ with st.sidebar:
         help="Get a free key from https://console.groq.com/keys",
     )
 
-    model_name = st.selectbox(
-        "Groq Model",
-        ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "gemma2-9b-it"],
-        index=0,
+       model_name = st.selectbox(
+       "Groq Model",
+       ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "moonshotai/kimi-k2-instruct"],
+       index=0,
+   
     )
 
     st.divider()
